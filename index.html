@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/b50399bb27.js" crossorigin="anonymous"></script>
+    <title>Editor de Memes</title>
+</head>
+
+<body>
+
+    <!-- START SECTION HEADER -->
+    <header class="container-header">
+        <h1 class="title">Generador de Memes</h1>
+        <section class="header-buttons">
+            <button class="button"><i class="fas fa-file-image" aria-hidden="true"></i>Imagen </button>
+
+            <button class="button"> <i class="fas fa-font" aria-hidden="true"></i>Texto</button>
+            <button class="button"> <i class="far fa-lightbulb" aria-hidden="true"></i>Modo
+                Oscuro</button>
+            <button class="button"><i class="fas fa-moon" aria-hidden="true"></i>Modo
+                Claro</button>
+        </section>
+    </header>
+
+    <!-- FINAL SECTION HEADER -->
+
+
+    <!-- START SECTION MAIN -->
+    <main class="container-main">
+        <section class="container-meme">
+            <p class="image-text">TOP TEXT</p>
+            <div class="image-meme"></div>
+            <p class="image-text">BOTTOM TEXT</p>
+        </section>
+
+
+
+        <button class="button-download">Descargar Meme</button>
+    </main>
+
+    <!-- FINAL SECTION MAIN -->
+
+
+    <!-- START SECTION IMAGEN -->
+
+    <aside class="container-aside">
+
+        <h2 class="title-aside">IMAGEN</h2>
+
+        <!-- Start URL -->
+        <section class="aside-section">
+            <article class="aside-inputs">
+                <label class="title-h3" for="url"></label>URL
+                <input type="text" id="url">
+            </article>
+            <!-- Final URL -->
+
+            <!-- Start FONDO -->
+            <article class="aside-section">
+                <label class="title-h3" for="back-color">FONDO</label>
+                <div>
+                    <input type="color" id="back-color">
+                    <span class="input-color">#FFFFF</span>
+                </div>
+                <div>
+                    <select name="back-styles" id="back-styles">
+                        <option value="">Ninguno</option>
+                        <option value="">Aclarar</option>
+                        <option value="">Oscurecer</option>
+                        <option value="">Diferencia</option>
+                        <option value="">Luminosidad</option>
+                        <option value="">Multiplicar</option>
+
+                    </select>
+                </div>
+            </article>
+            <!-- Final FONDO -->
+
+            <!-- Start BRILLO  -->
+            <article class="aside-section">
+                <h3 class="title-h3">FILTROS</h3>
+                <div class="container-filters">
+                    <label class="title-filters" for="brightness">BRILLO</label>
+                    <input type="range" name="brightness" id="brightness">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="opacity">OPACIDAD</label>
+                    <input type="range" name="opacity" id="opacity">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="contrast">CONTRASTE</label>
+                    <input type="range" name="contrast" id="contrast">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="blur">DESENFOQUE</label>
+                    <input type="range" id="blur" name="blur">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="grayscale">ESCALA DE GRISES</label>
+                    <input type="range" name="grayscale" id="grayscale">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="sepia">SEPIA</label>
+                    <input type="range" name="sepia" name="sepia">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="hue">HUE</label>
+                    <input type="range" name="hue" id="hue">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="saturated">SATURADO</label>
+                    <input type="range" name="saturated" id="saturated">
+                </div>
+
+                <div class="container-filters">
+                    <label class="title-filters" for="negative">NEGATIVO</label>
+                    <input type="range" name="negative" id="negative">
+                </div>
+            </article>
+            <!-- Final Brillo -->
+        </section>
+
+        <button class="button-aside">Reestablecer filtros</button>
+
+    </aside>
+
+    <!-- FINAL SECTION IMAGEN -->
+
+    <!-- START SECTION TEXTO -->
+    <aside class="container-aside">
+        <h2 class="title-aside">TEXTO</h2>
+
+        <section class="aside-section">
+
+            <!-- Start Superior -->
+            <article class="aside-inputs">
+                <label class="title-h3" for="top-text">SUPERIOR</label>
+                <input type="text" name="top-text" id="top-text">
+                <div>
+                    <input type="checkbox" name="no-top-text" id="no-top-text">
+                    <label class="label-ckeckbox" for="no-top-text">Sin texto superior</label>
+                </div>
+            </article>
+            <!-- Final Superior -->
+
+            <!-- Start Inferior -->
+            <article class="aside-inputs">
+                <label class="title-h3" for="bottom-text">INFERIOR</label>
+                <input type="text" name="bottom-text" id="bottom-text">
+                <div>
+                    <input type="checkbox" name="no-bottom-text" id="no-bottom-text">
+                    <label class="label-ckeckbox" for="no-bottom-text">Sin texto inferior</label>
+                </div>
+            </article>
+            <!-- Final Inferior -->
+
+            <!-- Start Fuente -->
+            <article class="aside-inputs">
+                <label class="title-h3">FUENTE</label>
+                <select name="font-type" id="font-type">
+                    <option value="">Arial</option>
+                    <option value="">Arial Black</option>
+                    <option value="">American Typewriter</option>
+                    <option value="">Andale Mono</option>
+                    <option value="">Comic Sans MS</option>
+                    <option value="">Helvetica</option>
+                    <option value="">Impact</option>
+                    <option value="">Verdana</option>
+                    <option value="">Times New Roman</option>
+                </select>
+
+                <div class="font-buttons">
+                    <input type="number" id="font-size" min="12" max="90">
+                    <button class="button-align"><i class="fas fa-align-left"></i></button>
+                    <button class="button-align"><i class="fas fa-align-center"></i></button>
+                    <button class="button-align"><i class="fas fa-align-right"></i></button>
+                </div>
+            </article>
+
+
+
+            <!-- Final Fuente -->
+
+            <!-- Start Color, Fondo -->
+            <article class="aside-inputs">
+                <div>
+                    <div>
+                        <label class="title-h3" for="font-color">COLOR</label>
+                        <input type="color" id="font-color">
+                    </div>
+                    <div>
+                        <label class="title-h3" for="font-back">FONDO</label>
+                        <input type="color" id="font-back">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="back-transparent" id="no-top-text">
+                    <label class="label-ckeckbox" for="back-transparent">Fondo transparente</label>
+                </div>
+            </article>
+            <!-- Final Color, Fondo -->
+
+            <!-- Start Contorno -->
+            <article class="aside-inputs">
+                <h3 class="title-h3">CONTORNO</h3>
+                <div>
+                    <button class="button-aside">Ninguno</button>
+                    <button class="button-aside">Claro</button>
+                    <button class="button-aside">Oscuro</button>
+                </div>
+            </article>
+
+            <!-- Fin Contorno -->
+
+            <!-- Start Espaciado -->
+            <article class="aside-inputs">
+                <label class="title-h3" for="spacing">ESPACIADO</label>
+                <input type="number" id="spacing" min="10" max="50">
+            </article>
+            <!-- Fin Espaciado -->
+
+            <!-- Start Interlineado -->
+            <article class="aside-inputs">
+                <label class="title-h3" for="line-spacing">INTERLINEADO</label>
+                <select name="line-spacing" id="line-spacing">
+                    <option value="0.8">0.8</option>
+                    <option value="1">1</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                </select>
+            </article>
+
+            <!-- Fin Interlineado -->
+        </section>
+
+    </aside>
+
+    <!-- FIN SECTION TEXTO -->
+    <script src="app.js"></script>
+</body>
+
+</html>
