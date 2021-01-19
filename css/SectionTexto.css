@@ -1,0 +1,113 @@
+/* Start View Movile */
+
+.text{
+    margin-top: 3%;
+}
+
+.style-check{
+    margin-top: -8px;
+    font-size: 0.8rem;
+}
+
+.font-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.font-size-btn{
+    width: 50%;
+}
+
+.button-align{
+    flex-grow: 1;
+    background-color: var(--back-container-main);
+    border: 1px solid gray;
+    height: 37px;
+    margin: 0 0 0 2%;
+}
+
+.button-align:hover{
+    background-color: var(--back-container-header);
+}
+
+
+.font-width{
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.label-back{
+    margin-left: 4%;
+}
+
+.back-input-font{
+    width: 96%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    background-color: var(--back-container-main);
+    padding: 8px;
+}
+
+.back-input-font:hover{
+    background-color: var(--back-container-header);
+}
+
+.back-margin-text{
+align-self: flex-end;
+
+}
+
+.style-check-transparent{
+    margin-top: 8px;
+}
+
+.button-outline{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.button-aside-outline {
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 0 6px;
+    transition: all .9s ease;
+    width: fit-content;
+    font-size: 1rem;
+    margin: 1% 4% 0 0;
+    transition: all 1s ease-in-out;
+    background-color: var(--back-button-download);
+    color: var(--color-button-download);
+}
+
+
+.button-aside-outline:hover {
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
+    border-radius: 12px;
+    color: var(--color-button-download-hover);
+}
+
+
+
+
+
+@media (min-width:700px){
+
+}
+
+/* Final View Mobile */
+
+
+/* Start View Destock */
+@media (min-width: 1300px){
+
+}
+
+
+/* Final View Destock */

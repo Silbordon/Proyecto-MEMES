@@ -1,0 +1,28 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose', 'Times New Roman', Times, serif;
+}
+
+
+
+
+button{
+   border: none;
+   outline: none;
+}
+
+
+.none{
+    display: none;
+}
+
+input, select{
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+ 

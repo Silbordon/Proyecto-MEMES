@@ -1,0 +1,33 @@
+:root{
+    /* Section Header */
+    --back-container-header: #F6A867;
+    --button-hover: #FA6E58;
+    /* Section Main */
+    --back-container-main: #f3f2ac;
+    --back-button-download: #1c6db8;
+    --color-button-download: white;
+    --color-button-download-hover: black;
+    --border-input: 1px solid rgb(201, 188, 188);
+    /* Section Images */
+    --back-filters-inputs: #9a9da8;
+}
+
+
+
+
+
+
+.dark{
+      /* Section Header */
+      --back-container-header: #110038;
+      --button-hover:
+       /* Section Main */
+       --fondo-container-main:
+       --back-button-download:
+       --color-button-download: 
+       --color-button-download-hover:
+       --border-input:
+         /* Section Images */
+    --back-filters-inputs: ;
+
+}

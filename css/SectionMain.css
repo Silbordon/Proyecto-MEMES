@@ -1,0 +1,75 @@
+/* Start View Movile */
+
+.container-main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    background-color: var(--back-container-main);
+}
+
+
+.container-meme {
+    width: 88%;
+    height: 65vh;
+    margin: 0% 5% 5% 5%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-text {
+   height: 15%;
+   padding-top: 5%;
+   font-weight: 700;
+   font-size: 1.5rem;
+}
+
+
+.image-meme {
+    width: 100%;
+    height: 70% ;
+    background-color: black;
+    
+}
+
+.button-download {
+font-size: 1.1rem;
+background-color: var(--back-button-download);
+padding: 15px;
+cursor: pointer;
+transition: all 1s ease;
+color: var(--color-button-download);
+
+}
+
+.button-download i{
+    padding-right: 8px;
+}
+
+
+.button-download:hover{
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
+    border-radius: 12px;
+    color: var(--color-button-download-hover);
+}
+
+
+
+@media (min-width:700px) {}
+
+/* Final View Mobile */
+
+
+/* Start View Destock */
+@media (min-width: 1300px) {}
+
+
+/* Final View Destock */

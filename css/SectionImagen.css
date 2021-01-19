@@ -1,0 +1,162 @@
+/* Start View Movile */
+
+.container-aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+/* Style icon cancel */
+
+.check{
+    display: none;
+}
+
+.cancel {
+    right: 30px;
+    top: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+
+.title-aside {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.aside-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    padding: 0 4%;
+
+}
+
+.aside-inputs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title-h3{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+    text-decoration: underline;
+
+}
+
+.url {
+    font-size: 0.8rem;
+    font-weight: 400;
+    outline: none;
+    padding: 9px;
+    margin-bottom: 2%;
+    background-color: var(--back-container-main);
+    border: var(--border-input);
+}
+
+.url:focus,
+.url:hover,
+.back-input:hover,
+.back-styles:hover {
+    background-color: var(--back-container-header);
+}
+
+.aside-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.back-input {
+    width: 47%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 2%;
+    background-color: var(--back-container-main);
+}
+
+.back-color {
+    margin-right: 3px;
+    margin-left: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0;  
+}
+
+
+.input-color {
+    font-size: 0.8rem;
+}
+
+.back-styles {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    background-color: var(--back-container-main);
+}
+
+
+.container-filters {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 1%;
+    margin-top: 2%;
+}
+
+
+.filters {
+    background-color: var(--back-filters-inputs);
+    border-radius: 10px;
+    appearance: none;
+    height: 6px;
+    margin-top: 10px;
+    color: #5a5d68;
+
+}
+
+.button-aside {
+    cursor: pointer;
+    padding: 8px 15px;
+    margin: 0 6px;
+    transition: all .9s ease;
+    width: fit-content;
+    font-size: 1rem;
+    margin: 3% 4%;
+    transition: all 1s ease;
+    background-color: var(--back-button-download);
+    color: var(--color-button-download);
+}
+
+.button-aside:hover {
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
+    border-radius: 12px;
+    color: var(--color-button-download-hover);
+}
+
+
+
+@media (min-width:700px) {}
+
+/* Final View Mobile */
+
+
+/* Start View Destock */
+@media (min-width: 1300px) {}
+
+
+/* Final View Destock */
