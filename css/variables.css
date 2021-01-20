@@ -1,15 +1,18 @@
 :root{
     /* Section Header */
     --back-container-header: #F6A867;
-    --button-hover: #FA6E58;
+    --button-hover: #f8583f;
+    --color-title: black;
     /* Section Main */
     --back-container-main: #f3f2ac;
     --back-button-download: #1c6db8;
     --color-button-download: white;
     --color-button-download-hover: black;
     --border-input: 1px solid rgb(201, 188, 188);
+    --background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
     /* Section Images */
-    --back-filters-inputs: #9a9da8;
+    --back-filters-inputs: #494c55;
+    --input-background-hover: #F6A867;
 }
 
 
@@ -19,15 +22,18 @@
 
 .dark{
       /* Section Header */
-      --back-container-header: #110038;
-      /* --button-hover: */
+      --back-container-header: #001826;
+      --color-title: white;
+      --button-hover: #F0810E;
        /* Section Main */
-       --fondo-container-main: #053752;
-       /* --back-button-download:
-       --color-button-download: 
-       --color-button-download-hover:
-       --border-input: */
+       --back-container-main: #053752;
+       --back-button-download: #E5DE44;
+       --background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+       --color-button-download:  black;
+       /* --color-button-download-hover: */
+       /* --border-input:  */
          /* Section Images */
-    /* --back-filters-inputs: ; */
+         --input-background-hover: #7ea5c9;
+         --back-filters-inputs: #9a9da8; 
 
 }

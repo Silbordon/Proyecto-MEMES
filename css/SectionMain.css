@@ -31,7 +31,7 @@
    padding-top: 5%;
    font-weight: 700;
    font-size: 1.5rem;
-   background-color: var(--color-button-download);
+   background-color: white;
 }
 
 
@@ -58,7 +58,7 @@ color: var(--color-button-download);
 
 
 .button-download:hover{
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
+    background-image: var(--background-image);
     border-radius: 12px;
     color: var(--color-button-download-hover);
 }
@@ -88,7 +88,7 @@ color: var(--color-button-download);
         }
 
         .button-download{
-            margin-top: 2%;
+            margin-top: 1%;
         }
 
 }

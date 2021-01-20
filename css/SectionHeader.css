@@ -13,6 +13,7 @@
 .title{
     font-size: 1.9rem;
     margin-top: 4%;
+    color: var(--color-title);
 }
 
 
@@ -33,6 +34,7 @@ justify-content: center;
     padding: 8px 15px;
     margin: 0 6px;
     transition: all .9s ease;
+    color: var(--color-title);
 }
 
 

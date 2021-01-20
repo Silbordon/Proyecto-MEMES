@@ -31,10 +31,11 @@
     border: 1px solid gray;
     height: 37px;
     margin: 0 0 0 2%;
+    color: var(--color-title);
 }
 
 .button-align:hover {
-    background-color: var(--back-container-header);
+    background-color: var(--input-background-hover);
 }
 
 
@@ -60,7 +61,7 @@
 }
 
 .back-input-font:hover {
-    background-color: var(--back-container-header);
+    background-color: var(--input-background-hover);
 }
 
 .back-margin-text {
@@ -96,7 +97,7 @@
 
 
 .button-aside-outline:hover {
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #FA6E58 35%, #c8699e 52%, #8f74b4 71%, #414ebb 87%, #949ac9 100%);
+    background-image: var(--background-image);
     border-radius: 12px;
     color: var(--color-button-download-hover);
 }
