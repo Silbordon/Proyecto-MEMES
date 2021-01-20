@@ -9,13 +9,14 @@
     background-color: var(--color-button-download);
     display: none;
     color: var(--color-title);
+    height: 100%;
     
 }
 
 /* Style icon cancel */
 
 .check {
-    display: none;
+    opacity: 0;
 }
 
 .cancel {
@@ -211,6 +212,7 @@ input[type='range']::-webkit-slider-thumb {
     .container-aside {
         width: 20%;        
         height: fit-content;
+        
     }
 
     .title-aside {

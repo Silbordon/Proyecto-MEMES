@@ -69,6 +69,11 @@ color: var(--color-button-download);
     .container-main{
         height: fit-content;
     }
+
+    .container-meme{
+        width: 60%;
+        height: 90vh;
+        }
 }
 
 /* Final View Mobile */

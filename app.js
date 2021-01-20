@@ -21,6 +21,7 @@ const btnModeDark = document.getElementById('btn-modeDark');
 
 // Function button Image y cancel
 btnImage.addEventListener('click', ()=>{
+    alert('funciona')
     if(window.innerWidth<700){
         sectionImage.style.display = 'block';
         sectionHeader.classList.add('none')
@@ -28,11 +29,11 @@ btnImage.addEventListener('click', ()=>{
         btncancelImage.style.display = 'block';
     }
     if(window.innerWidth>=700 && window.innerWidth<1300){
-        sectionImage.classList.remove('none'); 
+        sectionImage.style.display = 'block'; 
         sectionText.classList.add('none'); 
     }
     if(window.innerWidth>=1300){
-        sectionImage.classList.remove('none');
+        sectionImage.style.display = 'block'; 
         sectionText.classList.add('none');  
     }
 })
@@ -60,11 +61,13 @@ btnText.addEventListener('click', ()=>{
     }
     if(window.innerWidth>=700 && window.innerWidth<1300){
         sectionText.classList.remove('none'); 
+        sectionText.style.display = 'block';
         sectionImage.classList.add('none');
     }
     if(window.innerWidth>=1300){
         sectionText.classList.remove('none');
         sectionImage.classList.add('none');
+        sectionText.style.display = 'block';
           
     }
 })

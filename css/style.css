@@ -26,4 +26,7 @@ input, select{
     outline: none;
     
 }
- 
+
+body{
+    background-color: var(--color-button-download););
+}
