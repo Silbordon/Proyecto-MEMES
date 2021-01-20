@@ -200,22 +200,23 @@
             <article class="aside-inputs">
                 <label class="title-h3 text">FUENTE</label>
                 <select name="font-type" id="font-type" class="url">
-                    <option value="">Arial</option>
-                    <option value="">Arial Black</option>
-                    <option value="">American Typewriter</option>
-                    <option value="">Andale Mono</option>
-                    <option value="">Comic Sans MS</option>
-                    <option value="">Helvetica</option>
-                    <option value="">Impact</option>
-                    <option value="">Verdana</option>
-                    <option value="">Times New Roman</option>
+                    <option value="arial">Arial</option>
+                    <option value="arial black">Arial Black</option>
+                    <option value="Lucida Sans">Lucida Sans</option>
+                    <option value="sans serif">Sans serif</option>
+                    <option value="comic sans ms">Comic Sans MS</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="impact">Impact</option>
+                    <option value="vendana">Verdana</option>
+                    <option value="georgia">Georgia</option>
                 </select>
+
 
                 <div class="font-buttons">
                     <input type="number" id="font-size" min="12" max="90" value="35" class="url font-size-btn">
-                    <button class="button-align"><i class="fas fa-align-left"></i></button>
-                    <button class="button-align"><i class="fas fa-align-center"></i></button>
-                    <button class="button-align"><i class="fas fa-align-right"></i></button>
+                    <button class="button-align" id="align-left"><i class="fas fa-align-left"></i></button>
+                    <button class="button-align" id="align-center"><i class="fas fa-align-center"></i></button>
+                    <button class="button-align" id="align-right"><i class="fas fa-align-right"></i></button>
                 </div>
             </article>
 
@@ -230,19 +231,19 @@
                         <h3 class="title-h3" for="font-color">COLOR</h3>
                         <div class="back-input-font">
                             <input type="color" id="font-color" class="back-color" value="#000000">
-                            <span class="input-color">#000000</span>
+                            <span class="input-color" id="font-color-text">#000000</span>
                         </div>
                     </div>
                     <div class="aside-inputs font-width">
                         <h3 class="title-h3 label-back" for="font-back">FONDO</h3>
                         <div class="back-input-font back-margin-text">
                             <input type="color" id="font-back" class="back-color" value="#FFFFFF">
-                            <span class="input-color">#FFFFFF</span>
+                            <span class="input-color" id="font-back-text">#FFFFFF</span>
                         </div>
                     </div>
                 </div>
                 <div class="style-check-transparent">
-                    <input type="checkbox" name="back-transparent" id="no-top-text">
+                    <input type="checkbox" name="back-transparent" id="check-transparent">
                     <label class="label-ckeckbox" for="back-transparent">Fondo transparente</label>
                 </div>
             </article>
@@ -252,9 +253,9 @@
             <article class="aside-inputs">
                 <h3 class="title-h3 text">CONTORNO</h3>
                 <div class="button-outline">
-                    <button class="button-aside-outline">Ninguno</button>
-                    <button class="button-aside-outline">Claro</button>
-                    <button class="button-aside-outline">Oscuro</button>
+                    <button class="button-aside-outline" id="outline-none">Ninguno</button>
+                    <button class="button-aside-outline" id="outline-light">Claro</button>
+                    <button class="button-aside-outline" id="outline-dark">Oscuro</button>
                 </div>
             </article>
 
