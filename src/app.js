@@ -3,6 +3,8 @@
 const sectionHeader = document.getElementById('section-header');
 const sectionMain = document.getElementById('section-main')
 
+
+
 // Image y cancel
 const btnImage = document.getElementById('btn-image');
 const sectionImage = document.getElementById('section-image');
@@ -21,7 +23,6 @@ const btnModeDark = document.getElementById('btn-modeDark');
 
 // Function button Image y cancel
 btnImage.addEventListener('click', ()=>{
-    alert('funciona')
     if(window.innerWidth<700){
         sectionImage.style.display = 'block';
         sectionHeader.classList.add('none')
@@ -30,25 +31,26 @@ btnImage.addEventListener('click', ()=>{
     }
     if(window.innerWidth>=700 && window.innerWidth<1300){
         sectionImage.style.display = 'block'; 
-        sectionText.classList.add('none'); 
+        sectionText.style.display ='none';  
     }
     if(window.innerWidth>=1300){
         sectionImage.style.display = 'block'; 
-        sectionText.classList.add('none');  
+        sectionText.style.display ='none';  
     }
 })
 
 
-if(window.innerWidth>=1300){
-    sectionImage.classList.remove('none');     
-}
-
 
 btncancelImage.addEventListener('click', ()=>{
-    sectionImage.style.display = 'none';
-    sectionHeader.classList.remove('none');
-    sectionMain.classList.remove('none');
-})
+    alert('funciono')
+    if(window.innerWidth<1300){
+        sectionImage.style.display = 'none';
+        sectionHeader.classList.remove('none');
+        sectionMain.classList.remove('none');
+    }
+});
+
+
 
 
 // Function button Text y cancel
@@ -79,6 +81,8 @@ btncancelText.addEventListener('click', ()=>{
     sectionMain.classList.remove('none');
 })
 
+
+
 // Function Theme Light and Dark
 
 btnModeLight.addEventListener('click', ()=>{
@@ -93,3 +97,5 @@ btnModeDark.addEventListener('click', ()=>{
     btnModeLight.classList.remove('none');
     btnModeDark.classList.add('none');
 })
+
+
