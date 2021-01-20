@@ -20,14 +20,14 @@
 .dark{
       /* Section Header */
       --back-container-header: #110038;
-      --button-hover:
+      /* --button-hover: */
        /* Section Main */
-       --fondo-container-main:
-       --back-button-download:
+       --fondo-container-main: #053752;
+       /* --back-button-download:
        --color-button-download: 
        --color-button-download-hover:
-       --border-input:
+       --border-input: */
          /* Section Images */
-    --back-filters-inputs: ;
+    /* --back-filters-inputs: ; */
 
 }

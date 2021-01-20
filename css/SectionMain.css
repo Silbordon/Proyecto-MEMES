@@ -26,10 +26,12 @@
 }
 
 .image-text {
+    width: 100%;
    height: 15%;
    padding-top: 5%;
    font-weight: 700;
    font-size: 1.5rem;
+   background-color: var(--color-button-download);
 }
 
 
@@ -63,13 +65,32 @@ color: var(--color-button-download);
 
 
 
-@media (min-width:700px) {}
+@media (min-width:700px) {
+    .container-main{
+        height: fit-content;
+    }
+}
 
 /* Final View Mobile */
 
 
 /* Start View Destock */
-@media (min-width: 1300px) {}
+@media (min-width: 1300px) {
+    .container-main{
+        width: 80%;
+        padding-bottom: 10%;
+        height: fit-content;
+    }
 
+    .container-meme{
+        width: 60%;
+        height: 90vh;
+        }
+
+        .button-download{
+            margin-top: 2%;
+        }
+
+}
 
 /* Final View Destock */

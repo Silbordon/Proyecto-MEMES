@@ -1,25 +1,31 @@
 /* Start View Movile */
 
-.text{
+.title-aside-text{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.text {
     margin-top: 3%;
 }
 
-.style-check{
-    margin-top: -8px;
+.style-check {
+    margin-top: -2px;
     font-size: 0.8rem;
 }
 
-.font-buttons{
+.font-buttons {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-.font-size-btn{
+.font-size-btn {
     width: 50%;
 }
 
-.button-align{
+.button-align {
     flex-grow: 1;
     background-color: var(--back-container-main);
     border: 1px solid gray;
@@ -27,22 +33,22 @@
     margin: 0 0 0 2%;
 }
 
-.button-align:hover{
+.button-align:hover {
     background-color: var(--back-container-header);
 }
 
 
-.font-width{
+.font-width {
     width: 50%;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.label-back{
+.label-back {
     margin-left: 4%;
 }
 
-.back-input-font{
+.back-input-font {
     width: 96%;
     display: flex;
     justify-content: start;
@@ -50,22 +56,24 @@
     border: 1px solid black;
     background-color: var(--back-container-main);
     padding: 8px;
+    border: var(--border-input);
 }
 
-.back-input-font:hover{
+.back-input-font:hover {
     background-color: var(--back-container-header);
 }
 
-.back-margin-text{
-align-self: flex-end;
+.back-margin-text {
+    align-self: flex-end;
 
 }
 
-.style-check-transparent{
+.style-check-transparent {
     margin-top: 8px;
+    font-size: 0.8rem;
 }
 
-.button-outline{
+.button-outline {
     width: 60%;
     display: flex;
     justify-content: flex-start;
@@ -97,16 +105,41 @@ align-self: flex-end;
 
 
 
-@media (min-width:700px){
-
-}
+@media (min-width:700px) {}
 
 /* Final View Mobile */
 
 
 /* Start View Destock */
-@media (min-width: 1300px){
+@media (min-width: 1300px) {
+    .cancel {
+        opacity: 0;
+    }
 
+    .title-h3{
+        font-size: 20px;
+    }
+
+    .text-title {
+        margin-top: 100px;
+    }
+
+    .style-check, .style-check-transparent {
+        margin-top: 3px;
+    }
+
+    .button-outline{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .button-aside-outline{
+        font-size: 0.8rem;
+        margin: 0;
+
+    }
 }
 
 

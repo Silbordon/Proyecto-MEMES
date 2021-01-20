@@ -58,7 +58,19 @@ border-radius: 12px;
 
 /* Start View Destock */
 @media (min-width: 1300px){
+.container-header{
+    width: 80%;
+    height: 20vh;
+  
+}
 
+.title{
+    font-size: 2.1rem;
+}
+
+.header-buttons{
+    margin-top: 2%;
+}
 }
 
 
