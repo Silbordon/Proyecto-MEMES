@@ -20,10 +20,15 @@ button{
     display: none;
 }
 
-input, select{
+input, select, textarea{
     border-radius: 3px;
     cursor: pointer;
-    outline: none;
+    outline: none;  
+}
+
+textarea{
+    resize: none;
+    height: 35px;
     
 }
 

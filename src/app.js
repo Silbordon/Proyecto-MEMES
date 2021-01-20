@@ -42,7 +42,6 @@ btnImage.addEventListener('click', ()=>{
 
 
 btncancelImage.addEventListener('click', ()=>{
-    alert('funciono')
     if(window.innerWidth<1300){
         sectionImage.style.display = 'none';
         sectionHeader.classList.remove('none');

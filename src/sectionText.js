@@ -140,3 +140,19 @@ outlineDark.addEventListener('click', ()=>{
     topImageText.style.webkitTextStroke = '2px black';
     bottomImagetext.style.webkitTextStroke = '2px black';
 });
+
+
+//Function Spacing
+spacing.addEventListener('input' ,()=>{
+    const valueSpacing = spacing.value
+    topImageText.style.padding = `${valueSpacing}px 0`;
+    bottomImagetext.style.padding = `${valueSpacing}px 0`; 
+});
+
+
+// Function line Spacing
+lineSpacing.addEventListener('change', ()=>{
+    const valueLineSpacing = lineSpacing.value;
+    topImageText.style.lineHeight = valueLineSpacing;
+    bottomImagetext.style.lineHeight = valueLineSpacing;
+});
