@@ -35,10 +35,10 @@ const spacing = document.getElementById('spacing') //Input spacing
 
 const lineSpacing = document.getElementById('line-spacing'); // Select line spacing
 
-    //Function Up Input
+//Function Up Input
     topText.addEventListener('keyup', () => {
         const valueTop = topText.value;
-        topImageText.innerHTML = valueTop;
+        topImageText.innerText = valueTop;
     });
 
 
@@ -55,7 +55,7 @@ checkboxToptext.addEventListener('change', () => {
 //FunTion Botton Input 
 bottomText.addEventListener('keyup', () => {
     const valueBottom = bottomText.value;
-    bottomImagetext.innerHTML = valueBottom;
+    bottomImagetext.innerText = valueBottom;
 });
 
 
