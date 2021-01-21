@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/SectionTexto.css">
     <link rel="stylesheet" href="./css/SectionImagen.css">
     <link rel="stylesheet" href="./css/SectionMain.css">
@@ -79,17 +79,16 @@
                 <div class="aside-row">
                     <div class="back-input">
                         <input type="color" id="back-color" class="back-color" value="#FFFFFF">
-                        <span class="input-color">#FFFFF</span>
+                        <span class="input-color" id="back-color-span">#FFFFF</span>
                     </div>
                     <div class="back-input">
                         <select name="back-styles" id="back-styles" class="back-styles">
-                            <option value="">Ninguno</option>
-                            <option value="">Aclarar</option>
-                            <option value="">Oscurecer</option>
-                            <option value="">Diferencia</option>
-                            <option value="">Luminosidad</option>
-                            <option value="">Multiplicar</option>
-
+                            <option value="unset">Ninguno</option>
+                            <option value="lighten">Aclarar</option>
+                            <option value="darken">Oscurecer</option>
+                            <option value="difference">Diferencia</option>
+                            <option value="luminosity">Luminosidad</option>
+                            <option value="multiply">Multiplicar</option>
                         </select>
                     </div>
 
@@ -144,8 +143,8 @@
                 </div>
 
                 <div class="container-filters">
-                    <label class="title-filters" for="negative">NEGATIVO</label>
-                    <input type="range" name="negative" id="negative" class="filters" min="0" max="1" value="0"
+                    <label class="title-filters" for="invert">NEGATIVO</label>
+                    <input type="range" name="invert" id="invert" class="filters" min="0" max="1" value="0"
                         step="0.1">
                 </div>
             </article>
@@ -265,7 +264,7 @@
             <!-- Start Espaciado -->
             <article class="aside-inputs">
                 <label class="title-h3 text" for="spacing">ESPACIADO</label>
-                <input type="number" id="spacing" min="10" max="50" class="url">
+                <input type="number" id="spacing" min="10" max="50" class="url" value="35">
             </article>
             <!-- Fin Espaciado -->
 

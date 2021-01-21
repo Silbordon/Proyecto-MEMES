@@ -118,12 +118,20 @@ fontBack.addEventListener('input', ()=>{
 checkTransparent.addEventListener('change', ()=>{
     if(checkTransparent.checked){
         topImageText.style.backgroundColor = 'transparent';
-        bottomImagetext.style.backgroundColor = 'transparent';  
+        topImageText.style.position = 'absolute';
+        topImageText.style.top = '0'
+        bottomImagetext.style.backgroundColor = 'transparent'; 
+        bottomImagetext.style.position = 'absolute';
+        bottomImagetext.style.bottom = '0';
     } else{
         topImageText.style.backgroundColor = `${fontBack.value}`;
+        topImageText.style.position = '';
         bottomImagetext.style.backgroundColor = `${fontBack.value}`;
+        bottomImagetext.style.position = '';
     }
 });
+
+
 
 //Function Buttons Outline
 outlineNone.addEventListener('click', ()=>{
