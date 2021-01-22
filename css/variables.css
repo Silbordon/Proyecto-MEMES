@@ -3,6 +3,8 @@
     --back-container-header: #F6A867;
     --button-hover: #f8583f;
     --color-title: black;
+    --color-title-efect: rgb(243, 230, 217);
+    --color-title-efect2: rgb(207, 110, 19);
     /* Section Main */
     --back-container-main: #f3f2ac;
     --back-button-download: #1c6db8;
@@ -25,6 +27,8 @@
       --back-container-header: #001826;
       --color-title: white;
       --button-hover: #F0810E;
+      --color-title-efect: rgb(109, 100, 100);
+      --color-title-efect2: #7B96B8;
        /* Section Main */
        --back-container-main: #053752;
        --back-button-download: #E5DE44;
