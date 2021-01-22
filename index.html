@@ -4,6 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Silvina Bordón">
+    <meta name="description" content="Esta pagina es un Editor Generador de Memes para el Modulo 2 de ADA">
+    <meta name="keywords" content="Memes, Editor de imagen, Editor de texto">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Editor de Memes Silvina Bordon">
+    <meta property="og:description" content="Esta pagina es un Editor de Memes para el Modulo 2 de ADA">
+    <meta property="og:type" content="article">
+    <meta property="og:site name" content="editor de memes">
+    <meta property="og:url" content="https://silbordon.github.io/Proyecto-MEMES/">
+    <meta property="og:image" content="./img/imagenmeta.png">
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="150" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://silbordon.github.io/Proyecto-MEMES/">
+    <meta property="twitter:title" content="Editor de Memes Silvina Bordon">
+    <meta property="twitter:description" content="Esta pagina es un Editor de Memes para el Modulo 2 de ADA">
+    <meta property="twitter:image" content="./img/imagenmeta.png">
+
+    <!-- link -->
+    <script src="https://kit.fontawesome.com/b50399bb27.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -14,50 +37,50 @@
     <link rel="stylesheet" href="./css/SectionHeader.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/b50399bb27.js" crossorigin="anonymous"></script>
     <title>Editor de Memes</title>
 </head>
 
 <body>
 
     <!-- START SECTION HEADER -->
-  
-        <header class="container-header" id="section-header">
-            <h1 class="title">Generador de Memes</h1>
-            <section class="header-buttons">
-                <button class="button" id="btn-image"><i class="fas fa-file-image" aria-hidden="true"></i>Imagen </button>
-                <button class="button" id="btn-text"> <i class="fas fa-font" aria-hidden="true"></i>Texto</button>
-                <button class="button" id="btn-modeLight"> <i class="far fa-sun" aria-hidden="true"></i>Modo Claro</button>
-                <button class="button none" id="btn-modeDark"><i class="fas fa-moon" aria-hidden="true"></i>Modo Oscuro</button>
-            </section>
-        </header>
-    
-        <!-- FINAL SECTION HEADER -->
-    
-    
-    
-    
-        <!-- START SECTION MAIN -->
-        <main class="container-main" id="section-main">
-            <section class="container-meme">
-                <p class="image-text" id="top-image-text">TOP TEXT</p>
-                <div class="image-meme" id="image-meme"></div>
-                <p class="image-text" id="bottom-image-text">BOTTOM TEXT</p>
-            </section>
-    
-            <button class="button-download" id="btn-download-meme"><i class="fas fa-download"></i>Descargar Meme</button>
-        </main>
-    
-        <!-- FINAL SECTION MAIN -->
 
- 
+    <header class="container-header" id="section-header">
+        <h1 class="title">Generador de Memes</h1>
+        <section class="header-buttons">
+            <button class="button" id="btn-image"><i class="fas fa-file-image" aria-hidden="true"></i>Imagen </button>
+            <button class="button" id="btn-text"> <i class="fas fa-font" aria-hidden="true"></i>Texto</button>
+            <button class="button" id="btn-modeLight"> <i class="far fa-sun" aria-hidden="true"></i>Modo Claro</button>
+            <button class="button none" id="btn-modeDark"><i class="fas fa-moon" aria-hidden="true"></i>Modo
+                Oscuro</button>
+        </section>
+    </header>
+
+    <!-- FINAL SECTION HEADER -->
+
+
+
+
+    <!-- START SECTION MAIN -->
+    <main class="container-main" id="section-main">
+        <section class="container-meme">
+            <p class="image-text" id="top-image-text">TOP TEXT</p>
+            <div class="image-meme" id="image-meme"></div>
+            <p class="image-text" id="bottom-image-text">BOTTOM TEXT</p>
+        </section>
+
+        <button class="button-download" id="btn-download-meme"><i class="fas fa-download"></i>Descargar Meme</button>
+    </main>
+
+    <!-- FINAL SECTION MAIN -->
+
+
 
 
 
     <!-- START SECTION IMAGEN -->
-  
+
     <aside class="container-aside" id="section-image">
-        
+
         <input type="checkbox" name="check-img" id="check-img" class="check">
         <label for="check-img">
             <i class="fas fa-times cancel" id="cancel-img" aria-hidden="true"></i>
@@ -144,8 +167,7 @@
 
                 <div class="container-filters">
                     <label class="title-filters" for="invert">NEGATIVO</label>
-                    <input type="range" name="invert" id="invert" class="filters" min="0" max="1" value="0"
-                        step="0.1">
+                    <input type="range" name="invert" id="invert" class="filters" min="0" max="1" value="0" step="0.1">
                 </div>
             </article>
             <!-- Final Brillo -->
