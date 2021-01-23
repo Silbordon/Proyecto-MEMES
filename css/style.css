@@ -34,4 +34,15 @@ textarea{
 
 body{
     background-color: var(--color-button-download);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+}
+

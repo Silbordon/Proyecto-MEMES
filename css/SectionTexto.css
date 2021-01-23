@@ -87,7 +87,6 @@
 .button-aside-outline {
     cursor: pointer;
     padding: 8px 15px;
-    margin: 0 6px;
     transition: all .9s ease;
     width: fit-content;
     font-size: 1rem;
@@ -107,9 +106,24 @@
 
 
 
+@media (max-width: 700px){
+    .button-aside-outline{
+        /* font-size: 0.4rem; */
+        padding: 8px 5px;
+    }
+
+    .button-outline {
+        width: 40%;
+       
+    }
+}
 
 
-@media (min-width:700px) {}
+@media (max-width: 280px){
+    .button-aside-outline{
+        font-size: 0.8rem;
+    }
+}
 
 /* Final View Mobile */
 
