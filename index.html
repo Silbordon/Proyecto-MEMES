@@ -49,10 +49,10 @@
     <header class="container-header" id="section-header">
         <h1 class="title">Generador de Memes</h1>
         <section class="header-buttons">
-            <button class="button" id="btn-image"><i class="fas fa-file-image" aria-hidden="true"></i>Imagen </button>
-            <button class="button" id="btn-text"> <i class="fas fa-font" aria-hidden="true"></i>Texto</button>
-            <button class="button" id="btn-modeLight"> <i class="far fa-sun" aria-hidden="true"></i>Modo Claro</button>
-            <button class="button none" id="btn-modeDark"><i class="fas fa-moon" aria-hidden="true"></i>Modo
+            <button class="button" id="btn-image" aria-label="Personalizar estilos imagen"><i class="fas fa-file-image" aria-hidden="true"></i>Imagen </button>
+            <button class="button" id="btn-text" aria-label="Personalizar estilos texto"> <i class="fas fa-font" aria-hidden="true"></i>Texto</button>
+            <button class="button" id="btn-modeLight" aria-label="Cambiar a modo oscuro"> <i class="far fa-sun" aria-hidden="true"></i>Modo Claro</button>
+            <button class="button none" id="btn-modeDark" aria-label="Cambiar a modo claro"><i class="fas fa-moon" aria-hidden="true"></i>Modo
                 Oscuro</button>
         </section>
     </header>
@@ -66,11 +66,11 @@
     <main class="container-main" id="section-main">
         <section class="container-meme">
             <p class="image-text" id="top-image-text">TOP TEXT</p>
-            <div class="image-meme" id="image-meme"></div>
+            <div class="image-meme" id="image-meme" aria-label="Imagen del Meme"></div>
             <p class="image-text" id="bottom-image-text">BOTTOM TEXT</p>
         </section>
 
-        <button class="button-download" id="btn-download-meme"><i class="fas fa-download"></i>Descargar Meme</button>
+        <button class="button-download" id="btn-download-meme"><i class="fas fa-download" aria-hidden="true"></i>Descargar Meme</button>
     </main>
 
     <!-- FINAL SECTION MAIN -->
@@ -80,7 +80,7 @@
     <!-- Start container-father -->
     <div class="aside-container-general none" id="aside-container-general">
         <input type="checkbox" name="check-img" id="check-img" class="check">
-        <label for="check-img">
+        <label for="check-img" aria-label="Cerrar seccion">
             <i class="fas fa-times cancel" id="cancel" aria-hidden="true"></i>
         </label>
 
@@ -96,7 +96,7 @@
                 <!-- Start URL -->
                 <article class="aside-inputs">
                     <label class="title-h3" for="url">URL</label>
-                    <input type="text" id="url" class="url">
+                    <input type="text" id="url" class="url" aria-label="Ingresar URL de imagen">
                 </article>
                 <!-- Final URL -->
 
@@ -105,11 +105,11 @@
                     <label class="title-h3" for="back-color">FONDO</label>
                     <div class="aside-row">
                         <div class="back-input">
-                            <input type="color" id="back-color" class="back-color" value="#FFFFFF">
-                            <span class="input-color" id="back-color-span">#FFFFF</span>
+                            <input type="color" id="back-color" class="back-color" value="#FFFFFF" aria-label="Color de fondo del meme">
+                            <span class="input-color" id="back-color-span" aria-hidden="true">#FFFFF</span>
                         </div>
                         <div class="back-input">
-                            <select name="back-styles" id="back-styles" class="back-styles">
+                            <select name="back-styles" id="back-styles" class="back-styles" aria-label="Modificacion del fondo del meme segun el color">
                                 <option value="unset">Ninguno</option>
                                 <option value="lighten">Aclarar</option>
                                 <option value="darken">Oscurecer</option>
@@ -204,7 +204,7 @@
                 <!-- Start Superior -->
                 <article class="aside-inputs">
                     <label class="title-h3" for="top-text">SUPERIOR</label>
-                    <textarea type="text" name="top-text" id="top-text" class="url"></textarea>
+                    <textarea type="text" name="top-text" id="top-text" class="url" aria-label="Ingrese texto superior"></textarea>
                     <div class="style-check">
                         <input type="checkbox" name="no-top-text" id="no-top-text">
                         <label class="label-ckeckbox" for="no-top-text">Sin texto superior</label>
@@ -215,7 +215,7 @@
                 <!-- Start Inferior -->
                 <article class="aside-inputs">
                     <label class="title-h3 text" for="bottom-text">INFERIOR</label>
-                    <textarea type="text" name="bottom-text" id="bottom-text" class="url"></textarea>
+                    <textarea type="text" name="bottom-text" id="bottom-text" class="url" aria-label="Ingrese texto inferior"></textarea>
                     <div class="style-check">
                         <input type="checkbox" name="no-bottom-text" id="no-bottom-text">
                         <label class="label-ckeckbox" for="no-bottom-text">Sin texto inferior</label>
@@ -223,10 +223,11 @@
                 </article>
                 <!-- Final Inferior -->
 
+
                 <!-- Start Fuente -->
                 <article class="aside-inputs">
                     <label class="title-h3 text">FUENTE</label>
-                    <select name="font-type" id="font-type" class="url">
+                    <select name="font-type" id="font-type" class="url" aria-label="Elija Tipos de Fuente">
                         <option value="arial">Arial</option>
                         <option value="arial black">Arial Black</option>
                         <option value="Lucida Sans">Lucida Sans</option>
@@ -240,10 +241,10 @@
 
 
                     <div class="font-buttons">
-                        <input type="number" id="font-size" min="12" max="90" value="35" class="url font-size-btn">
-                        <button class="button-align" id="align-left"><i class="fas fa-align-left"></i></button>
-                        <button class="button-align" id="align-center"><i class="fas fa-align-center"></i></button>
-                        <button class="button-align" id="align-right"><i class="fas fa-align-right"></i></button>
+                        <input type="number" id="font-size" min="12" max="90" value="35" class="url font-size-btn" aria-label="Tamaño de fuente">
+                        <button class="button-align" id="align-left" aria-label="Alinear texto a la izquierda"><i class="fas fa-align-left" aria-hidden="true"></i></button>
+                        <button class="button-align" id="align-center" aria-label="Alinear texto al centro"><i class="fas fa-align-center" aria-hidden="true"></i></button>
+                        <button class="button-align" id="align-right" aria-label="Alinear texto a la derecho"><i class="fas fa-align-right" aria-hidden="true"></i></button>
                     </div>
                 </article>
 
@@ -257,15 +258,15 @@
                         <div class="aside-inputs font-width">
                             <h3 class="title-h3" for="font-color">COLOR</h3>
                             <div class="back-input-font">
-                                <input type="color" id="font-color" class="back-color" value="#000000">
-                                <span class="input-color" id="font-color-text">#000000</span>
+                                <input type="color" id="font-color" class="back-color" value="#000000" aria-label="Color de texto">
+                                <span class="input-color" id="font-color-text" aria-hidden="true">#000000</span>
                             </div>
                         </div>
                         <div class="aside-inputs font-width">
                             <h3 class="title-h3 label-back" for="font-back">FONDO</h3>
                             <div class="back-input-font back-margin-text">
-                                <input type="color" id="font-back" class="back-color" value="#FFFFFF">
-                                <span class="input-color" id="font-back-text">#FFFFFF</span>
+                                <input type="color" id="font-back" class="back-color" value="#FFFFFF" aria-label="Color de fondo de texto">
+                                <span class="input-color" id="font-back-text" aria-hidden="true">#FFFFFF</span>
                             </div>
                         </div>
                     </div>
@@ -280,9 +281,9 @@
                 <article class="aside-inputs">
                     <h3 class="title-h3 text">CONTORNO</h3>
                     <div class="button-outline">
-                        <button class="button-aside-outline" id="outline-none">Ninguno</button>
-                        <button class="button-aside-outline" id="outline-light">Claro</button>
-                        <button class="button-aside-outline" id="outline-dark">Oscuro</button>
+                        <button class="button-aside-outline" id="outline-none" aria-label="sin contorno">Ninguno</button>
+                        <button class="button-aside-outline" id="outline-light" aria-label="contorno claro">Claro</button>
+                        <button class="button-aside-outline" id="outline-dark" aria-label="contorno-oscuro">Oscuro</button>
                     </div>
                 </article>
 

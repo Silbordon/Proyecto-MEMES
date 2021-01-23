@@ -23,25 +23,42 @@ const btnModeDark = document.getElementById('btn-modeDark');
 
 if(window.innerWidth>700){
     asideContainerGeneral.classList.remove('none');   
+} else{
+    asideContainerGeneral.classList.add('none');
 }
+
 
 // Function button Image y cancel
 btnImage.addEventListener('click', ()=>{
+    asideContainerGeneral.classList.remove('none');
     sectionImage.style.display = 'block';
     sectionText.style.display ='none';  
 
 });
 
+btncancel.addEventListener('click', ()=>{
+    sectionImage.style.display = 'none'; 
+    sectionText.style.display = 'none';
+    asideContainerGeneral.classList.add('none');  
+});
+
+
 // btncancel.addEventListener('click', ()=>{
-//     alert('funciona')
-//     sectionImage.style.display = 'none'; 
-//     sectionText.style.display = 'none';  
+//     if(window.innerWidth<1300){
+//         alert(funciona)
+//         asideContainerGeneral.classList.add('none');
+//         sectionImage.style.display = 'none';
+//         sectionText.classList.display('none');
+//         sectionHeader.classList.remove('none');
+//         sectionMain.classList.remove('none');
+//     }
 // });
 
 
 btnText.addEventListener('click', ()=>{
-    sectionText.style.display = 'block';
+    asideContainerGeneral.classList.remove('none');
     sectionImage.style.display = 'none';
+    sectionText.style.display ='block'; 
 });
 
 
