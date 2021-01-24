@@ -3,8 +3,8 @@
 .title-aside-text{
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 20%;
     margin-bottom: 5%;
+    padding-top: 30%;
     
 }
 .text {
@@ -105,16 +105,25 @@
 }
 
 
+@media (min-width:370px){
+    .title-aside-text{
+        padding-top: 10%;
+    }
+}
 
-@media (max-width: 700px){
+@media (min-width:500px){
+    .title-aside-text{
+        padding-top: 25%;
+    }
+}
+
+@media (min-width: 700px){
     .button-aside-outline{
-        /* font-size: 0.4rem; */
         padding: 8px 5px;
     }
 
     .button-outline {
         width: 40%;
-       
     }
 }
 
@@ -149,13 +158,13 @@
     .button-outline{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         
     }
 
     .button-aside-outline{
-        font-size: 0.8rem;
-        margin: 0;
+        font-size: 0.9rem;
+        margin: 0 2%;
 
     }
 }
