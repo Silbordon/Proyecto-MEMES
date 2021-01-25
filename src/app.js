@@ -20,114 +20,41 @@ const sectionText = document.getElementById('section-text');
 const btnModeLight = document.getElementById('btn-modeLight');
 const btnModeDark = document.getElementById('btn-modeDark');
 
-
-if(window.innerWidth>700){
-    asideContainerGeneral.classList.remove('none');   
-} else{
-    asideContainerGeneral.classList.add('none');
-}
+//Container Meme
+const containerMeme = document.getElementById('container-meme');
+const btnDownloadMeme = document.getElementById('btn-download-meme');
 
 
-// Function button Image y cancel
+
+//Responsive con Js al modificar el tamaño de la pantalla
+window.addEventListener('resize', ()=>{
+
+    if(window.innerWidth>700){
+        asideContainerGeneral.style.display = 'block';   
+    } else{
+        asideContainerGeneral.classList.add('none');
+    }
+});
+
+
+// Function button Image Text y cancel
 btnImage.addEventListener('click', ()=>{
-    asideContainerGeneral.classList.remove('none');
+    asideContainerGeneral.style.display = 'block';
     sectionImage.style.display = 'block';
     sectionText.style.display ='none';  
 
 });
 
 btncancel.addEventListener('click', ()=>{
-    sectionImage.style.display = 'none'; 
-    sectionText.style.display = 'none';
-    asideContainerGeneral.classList.add('none');  
+    asideContainerGeneral.style.display = 'none';  
 });
-
-
-// btncancel.addEventListener('click', ()=>{
-//     if(window.innerWidth<1300){
-//         alert(funciona)
-//         asideContainerGeneral.classList.add('none');
-//         sectionImage.style.display = 'none';
-//         sectionText.classList.display('none');
-//         sectionHeader.classList.remove('none');
-//         sectionMain.classList.remove('none');
-//     }
-// });
 
 
 btnText.addEventListener('click', ()=>{
-    asideContainerGeneral.classList.remove('none');
+    asideContainerGeneral.style.display = 'block';
     sectionImage.style.display = 'none';
     sectionText.style.display ='block'; 
 });
-
-
-// btnImage.addEventListener('click', ()=>{
-//     if(window.innerWidth<700){
-//         sectionImage.style.display = 'block';
-//         sectionHeader.classList.add('none')
-//         sectionMain.classList.add('none');
-//         btncancel.style.display = 'block';
-//         asideContainerGeneral.style.display = 'block'; 
-//     }
-//     if(window.innerWidth>=700 && window.innerWidth<1300){
-//         sectionImage.style.display = 'block'; 
-//         sectionText.style.display ='none'; 
-//         asideContainerGeneral.style.display = 'block';  
-//     }
-//     if(window.innerWidth>=1300){
-//         sectionImage.style.display = 'block';
-//         asideContainerGeneral.style.display = 'block'; 
-//         sectionText.style.display ='none';  
-//     }
-// })
-
-
-
-// btncancel.addEventListener('click', ()=>{
-//     if(window.innerWidth<1300){
-//         sectionImage.style.display = 'none';
-//         sectionHeader.classList.remove('none');
-//         sectionMain.classList.remove('none');
-//     }
-// });
-
-
-
-
-// // Function button Text y cancel
-// btnText.addEventListener('click', ()=>{
-//     if(window.innerWidth<700){
-//     sectionText.classList.remove('none');
-//     sectionText.style.display = 'block';
-//     sectionHeader.classList.add('none');
-//     sectionMain.classList.add('none');
-//     btncancelText.style.display = 'block';
-//     }
-//     if(window.innerWidth>=700 && window.innerWidth<1300){
-//         sectionText.classList.remove('none'); 
-//         sectionText.style.display = 'block';
-//         sectionImage.classList.add('none');
-//     }
-//     if(window.innerWidth>=1300){
-//         sectionText.classList.remove('none');
-//         sectionImage.classList.add('none');
-//         sectionText.style.display = 'block';
-          
-//     }
-// })
-
-// btncancelText.addEventListener('click', ()=>{
-//     sectionText.style.display = 'none';
-//     sectionText.classList.add('none');
-//     sectionHeader.classList.remove('none');
-//     sectionMain.classList.remove('none');
-// })
-
-
-
-
-
 
 
 // Function Theme Light and Dark
@@ -136,6 +63,7 @@ btnModeLight.addEventListener('click', ()=>{
     document.body.classList.add('dark');
     btnModeLight.classList.add('none');
     btnModeDark.classList.remove('none');
+    
 })
 
 
@@ -146,3 +74,28 @@ btnModeDark.addEventListener('click', ()=>{
 })
 
 
+
+
+
+
+    // if(window.innerWidth >700){
+    //     asideContainerGeneral.style.display = 'block';
+    // const memeContainerSize = (memeContainer.getBoundingClientRect().width) / 16;
+    // memeContainer.style.height = `${memeContainerSize}rem`;
+
+    // const windowSize = window.innerWidth / 10
+    // console.log(windowSize);
+    // const textSize = Math.round(windowSize * 0.3);
+    // const paddSize = Math.round(windowSize * 0.2);
+    
+    // topTextBox.style.fontSize = `${textSize}px`;
+    // bottomTextBox.style.fontSize = `${textSize}px`;
+    // topTextBox.style.padding = `${paddSize}px 40px`
+    // bottomTextBox.style.padding = `${paddSize}px 40px`;
+
+    // fontSize.value = textSize;
+    // fontSpacing.value = paddSize;
+    // } else{
+
+    //     asideContainerGeneral.style.display = 'none';
+    // };
