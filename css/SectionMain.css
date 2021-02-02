@@ -39,6 +39,7 @@
     font-weight: 800;
     font-family: Verdana;
   }
+
 .image-text {
    width: 100%;
    padding: 2% 2%;
@@ -46,6 +47,7 @@
    font-size: 1.5rem;
    background-color: white;
    text-align: center;
+   overflow: hidden;
 }
 
 
