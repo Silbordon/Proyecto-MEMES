@@ -35,11 +35,13 @@ const spacing = document.getElementById('spacing') //Input spacing
 
 const lineSpacing = document.getElementById('line-spacing'); // Select line spacing
 
+
 //Function Up Input
     topText.addEventListener('keyup', () => {
         const valueTop = topText.value;
         topImageText.innerText = valueTop;
     });
+
 
 
 //FunTion Up Checkbok 
@@ -52,11 +54,13 @@ checkboxToptext.addEventListener('change', () => {
 });
 
 
+
 //FunTion Botton Input 
 bottomText.addEventListener('keyup', () => {
     const valueBottom = bottomText.value;
     bottomImagetext.innerText = valueBottom;
 });
+
 
 
 //Funcion Botton Checkbok 
@@ -98,6 +102,7 @@ alignRight.addEventListener('click', ()=>{
     bottomImagetext.style.textAlign= 'right';
 });
 
+
 // Function Color y background
 fontColor.addEventListener('input', ()=>{
     const valueFontColor = fontColor.value;
@@ -108,11 +113,14 @@ fontColor.addEventListener('input', ()=>{
 
 
 fontBack.addEventListener('input', ()=>{
-    const valueBackColor = fontBack.value;
-    topImageText.style.backgroundColor = valueBackColor;
-    bottomImagetext.style.background = valueBackColor;
-    fontBackText.innerHTML = valueBackColor.toUpperCase();
+    if(!checkTransparent.checked){
+        const valueBackColor = fontBack.value;
+        topImageText.style.backgroundColor = valueBackColor;
+        bottomImagetext.style.background = valueBackColor;
+        fontBackText.innerHTML = valueBackColor.toUpperCase();
+    }
 });
+
 
 //Function Checkbok-transparent
 checkTransparent.addEventListener('change', ()=>{
@@ -133,6 +141,7 @@ checkTransparent.addEventListener('change', ()=>{
 
 
 
+
 //Function Buttons Outline
 outlineNone.addEventListener('click', ()=>{
     topImageText.style.webkitTextStroke = 'transparent';
@@ -150,12 +159,14 @@ outlineDark.addEventListener('click', ()=>{
 });
 
 
+
 //Function Spacing
 spacing.addEventListener('input' ,()=>{
     const valueSpacing = spacing.value
     topImageText.style.padding = `${valueSpacing}px 0`;
     bottomImagetext.style.padding = `${valueSpacing}px 0`; 
 });
+
 
 
 // Function line Spacing
