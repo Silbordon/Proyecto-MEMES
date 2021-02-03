@@ -4,12 +4,12 @@ const sectionHeader = document.getElementById('section-header');
 const sectionMain = document.getElementById('section-main')
 
 
-
 // Image y cancel
 const btnImage = document.getElementById('btn-image');
 const sectionImage = document.getElementById('section-image');
 const btncancel = document.getElementById('cancel');
 const asideContainerGeneral = document.getElementById('aside-container-general');
+
 
 // Text 
 const btnText = document.getElementById('btn-text')
@@ -19,6 +19,7 @@ const sectionText = document.getElementById('section-text');
 // Button Themes
 const btnModeLight = document.getElementById('btn-modeLight');
 const btnModeDark = document.getElementById('btn-modeDark');
+
 
 //Container Meme
 const containerMeme = document.getElementById('container-meme');
@@ -42,7 +43,6 @@ btnImage.addEventListener('click', ()=>{
     asideContainerGeneral.style.display = 'block';
     sectionImage.style.display = 'block';
     sectionText.style.display ='none';  
-
 });
 
 btncancel.addEventListener('click', ()=>{
@@ -58,12 +58,10 @@ btnText.addEventListener('click', ()=>{
 
 
 // Function Theme Light and Dark
-
 btnModeLight.addEventListener('click', ()=>{
     document.body.classList.add('dark');
     btnModeLight.classList.add('none');
     btnModeDark.classList.remove('none');
-    
 })
 
 
@@ -72,6 +70,48 @@ btnModeDark.addEventListener('click', ()=>{
     btnModeLight.classList.remove('none');
     btnModeDark.classList.add('none');
 })
+
+
+
+// Function button download
+btnDownloadMeme.addEventListener('click', ()=>{
+domtoimage.toBlob(containerMeme)
+    .then(function (blob) {
+        saveAs(blob, 'my-meme.png');
+    });
+})
+
+
+
+// End 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
