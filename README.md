@@ -27,12 +27,12 @@ Esta aplicación es un editor para generar memes donde puedes manipular el texto
 
 <br>
 
-❗❗## **Este proyecto requiere las siguientes dependencias para la función del boton "Descargar meme":
-[DOM To Image](https://cdnjs.com/libraries/dom-to-image).
-[FileServer.js](https://cdnjs.com/libraries/FileSaver.js).
+ ## **❗❗Este proyecto requiere las siguientes dependencias para la función del boton "Descargar meme":
+- 📂[DOM To Image](https://cdnjs.com/libraries/dom-to-image).
+- 📂[FileServer.js](https://cdnjs.com/libraries/FileSaver.js).
 
 
-### **Asi es como se debería ver el Proyecto**
+### **📎Asi es como se debería ver el Proyecto**
 
 <br>
 
@@ -42,7 +42,7 @@ Esta aplicación es un editor para generar memes donde puedes manipular el texto
 
 ***
 
-## **Pseudocódigo sección URL de la imagen**
+## **📎Pseudocódigo sección URL de la imagen**
 
 ### **¿Cómo logramos que al poner el texto en el input Superior se pinte en la seccion TopText en el contenedor del meme?**
 <br>
