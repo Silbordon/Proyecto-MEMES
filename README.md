@@ -27,7 +27,7 @@ Esta aplicación es un editor para generar memes donde puedes manipular el texto
 
 <br>
 
- ### **Este proyecto requiere las siguientes dependencias para la función del boton "Descargar meme":
+ ### 🔧**Este proyecto requiere las siguientes dependencias para la función del boton "Descargar meme":**
 
 - 📂[DOM To Image](https://cdnjs.com/libraries/dom-to-image).
 - 📂[FileServer.js](https://cdnjs.com/libraries/FileSaver.js).
